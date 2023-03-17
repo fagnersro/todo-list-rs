@@ -1,0 +1,137 @@
+.task {
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  background: var(--gray-500);
+
+  display: flex;
+  justify-content: center;
+
+  height: 4.5rem;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 44rem;
+  height: 2.5rem;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  border: 0.5px solid var(--blue-);
+  border-radius: 100%;
+
+  height: 1.091rem;
+  width: 1.091rem;
+  transition: background-image 0.2s;
+}
+
+input[type="checkbox"]:hover {
+  background-image: radial-gradient(#1e709f55 20%, #1e709f55 100%);
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  border: none;
+  background-image: url("../assets/Cheked.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 0.2s;
+}
+
+input[type="checkbox"]:checked:hover {
+  border: none;
+  background-image: url("../assets/CheckedHover.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.paragraph {
+  color: var(--gray-100);
+
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 140%;
+
+  height: 2.5rem;
+  width: 90%;
+}
+
+.paragraph2 {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.paragraph:hover {
+  cursor: pointer;
+}
+
+.btnDelete {
+  background: none;
+  border: transparent;
+  color: var(--gray-300);
+
+  height: 1.5rem;
+}
+
+.btnDelete:hover {
+  color: var(--danger-);
+  cursor: pointer;
+}
+
+@media (max-width: 680px) {
+  .content {
+    width: 42rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    width: 33rem;
+  }
+  input[type="checkbox"] {
+    margin-right: 0.8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    width: 28rem;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .content {
+    width: 25rem;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .content {
+    width: 24.5rem;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 1rem;
+  }
+}
